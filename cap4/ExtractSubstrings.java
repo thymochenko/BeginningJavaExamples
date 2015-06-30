@@ -1,4 +1,4 @@
-public class ExtractSubstrings{
+public class ExtractSubstrings {
 	public static void main(String args[]){
 		String text = "to be or not to be";
 		int count = 0;
