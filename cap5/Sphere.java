@@ -1,3 +1,5 @@
+package cap5;
+
 class Sphere {
 	static final double PI = 3.14;
 	static int c  = 0;

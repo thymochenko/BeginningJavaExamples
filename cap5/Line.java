@@ -1,3 +1,5 @@
+package cap5;
+
 class Line{
 	Point start;
 	Point end;

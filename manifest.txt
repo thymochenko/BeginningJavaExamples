@@ -1,0 +1,2 @@
+Main-Class: cap5.TryGeometry
+Name: cap5/TryGeometry.class

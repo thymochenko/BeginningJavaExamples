@@ -1,3 +1,5 @@
+package cap5;
+
 import static java.lang.Math.sqrt;
 
 class Point {
