@@ -1,0 +1,4 @@
+adicionar .class a um jar
+jar cvf cap5.jar *.class (adiciona)
+executa
+java  -cp cap5.jar Trigonometry 
