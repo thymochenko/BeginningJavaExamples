@@ -15,6 +15,25 @@ public class Dog extends Animal {
 		breed = aBreed;
 	}
 	
+	//copy constructor
+	public Dog(Dog dog){
+		super(dog);
+		name = dog.name;
+		breed = dog.breed;
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public String getBreed(){
+		return breed;
+	}
+	
 	@Override
 	public String toString(){
 		return  super.toString() + " #{" + name + " o " +  breed + "}";
