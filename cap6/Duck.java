@@ -24,4 +24,8 @@ public class Duck extends Animal {
 	public void sound(){
 		System.out.println("Quack Quack Quack");
 	}
+	
+	public void layEgg(){
+		System.out.println("Egg laid");
+	}
 }
