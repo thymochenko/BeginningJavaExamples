@@ -1,48 +1,44 @@
 public class PolyLine {
 	
-	private ListPoint start;
-	private ListPoint end; 
+	private LinkedList polyline;
 	
-	public PolyLine(Point[] points){
-		if(points != null){
-			for(Point p : points){
-				addPoint(p);
-			}
-		}
-	}
-	// Construct a polyline from an array of coordinates
+	// Construct a polyline from an array of coordinate pairs
 	public PolyLine(double[][] coords) {
-		if(coords != null) {
-			for(int i = 0; i < coords.length ; ++i) {
-				addPoint(coords[i][0], coords[i][1]);
-			}
+		Point[] points = new Point[coords.length];
+		// Create points from the coordinates
+		for(int i = 0; i < coords.length ; ++i) {
+			points[i] = new Point(coords[i][0], coords[i][1]);
 		}
+		// Create the polyline from the array of points
+		polyline = new LinkedList(points);
 	}
 	
-	public void addPoint(Point point){
-		ListPoint newEnd = new ListPoint(point);
-		if(start == null){
-			start = newEnd;
-		} else{
-			end.setNext(newEnd);
-		}
-		
-		end = newEnd;
+	public PolyLine(Point[] points) {
+		polyline = new LinkedList(points);
+		// Create the polyline
 	}
-	// Add a point defi ned by a coordinate pair to the list
+	
+	public void addPoint(Point point) {
+		polyline.addItem(point);
+	}
+	
 	public void addPoint(double x, double y) {
-		addPoint(new Point(x, y));
+		polyline.addItem(new Point(x, y));
+	// Add the point to the list
 	}
 
+	// String representation of a polyline
 	@Override
-	public String toString(){
-		StringBuffer str = new StringBuffer("PolyLine");
-		ListPoint nextPoint = start;
-		while(nextPoint != null){
-			str.append(" " + nextPoint);
-			nextPoint = nextPoint.getNext();
+	public String toString() {
+		StringBuffer str = new StringBuffer(“Polyline:”);
+		Point point = (Point) polyline.getFirst();
+		// Set the 1st point as start
+		while(point != null) {
+			str.append(“ (“+ point+ “)”);
+			// Append the current point
+			point = (Point)polyline.getNext();
+			// Make the next point current
 		}
 		return str.toString();
 	}
-	
 }

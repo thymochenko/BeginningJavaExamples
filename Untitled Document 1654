@@ -1,0 +1,75 @@
+
+Ano: 2007
+Banca: CESPE
+Órgão: TRE-AP
+Prova: Técnico Judiciário - Programação de Sistemas
+Resolvi errado
+Assinale a opção correta acerca do uso do Java, da companhia Sun, em plataformas Windows.
+
+a)
+O diretório-padrão indicado para que o Java seja executado sem interferência do usuário é o c:/winnt/system/java.
+b)
+A variável de ambiente CLASSPATH é item obrigatório na instalação do Java no Windows.
+c)
+O comando java –jar, quando executado no Windows, gera uma busca recursiva pelos arquivos .java no diretório c:/winnt.
+d)
+O comando java –cp faz o compilador copiar as classes em execução para um outro espaço de memória definido pelo usuário.
+-->e)
+O comando javac –g realiza a compilação de softwares Java, gerando informações de debug.
+Você errou! Resposta: e
+
+
+Ano: 2007
+Banca: CESPE
+Órgão: TRE-AP
+Prova: Técnico Judiciário - Programação de Sistemas
+Resolvi certo
+Considerando o Linux como ambiente para desenvolvimento de aplicações Java, assinale a opção correta.
+
+a)
+O Java, por ser nativo em qualquer distribuição Linux e em suas bibliotecas, não necessita da instalação de um interpretador nem de uma máquina virtual Java.
+b)
+O diretório-padrão da instalação de uma máquina virtual Java no Linux exige a modificação do diretório /etc/sysconfig, porque o Java deve escrever nesse diretório.
+c)
+Para que possa utilizar o Java no Linux, o desenvolvedor deve poder modificar, como root, o arquivo java.cnf.
+-->d)
+A definição das variáveis de ambiente como a CLASSPATH auxilia o desenvolvedor e a aplicação Java a utilizarem bibliotecas do Java durante a execução de programas.
+e)
+O compilador necessário para que o Java funcione corretamente no Linux é o GNUJava2ee, que está disponível no diretório /usr/bin.
+Parabéns! Você acertou!
+
+
+Ano: 2010
+Banca: CESPE
+Órgão: TRE-MT
+Prova: Técnico Judiciário - Programação de Sistemas
+Resolvi errado
+Assinale a opção correta quanto à linguagem de programação Java.
+
+a)
+JVM é um tipo de linguagem de máquina, resultado da compilação do código-fonte Java, que é interpretado e executado pela máquina virtual Java.
+-->b)
+Listas, assim como conjuntos, são tipos genéricos de coleções, e servem para organizar referências a objetos fora da coleção.
+c)
+Servlet é uma tecnologia adaptada ao uso com banco de dados relacionais e é essencial no desenvolvimento de aplicativos na Internet.
+d)
+A linguagem Java não prevê soluções para o problema de vazamento de memória - memory leak -, razão por que é necessário liberar objetos que não estejam mais em uso.
+e)
+Na linguagem Java, tanto a sobrecarga, ou overload, quanto a sobrescrita, ou override, permitem que objetos instâncias que sejam de uma mesma classe tenham métodos com assinatura diferente.
+Você errou! Resposta: b
+
+
+
+Ano: 2009
+Banca: CESPE
+Órgão: ANAC
+Prova: Técnico Administrativo - Informática
+Resolvi certo
+texto associado   Texto associado
+A linguagem de programação Java permite operações de bit, como, por exemplo, Imagem 015.jpg
+
+-->    Certo
+    Errado
+
+Parabéns! Você acertou!
+
