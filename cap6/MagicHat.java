@@ -5,8 +5,10 @@ public class MagicHat {
 	static Random select = new Random();
 	private String hatName;
 	private Rabbit rabbits[];
+	static private String[] rabbitNames = {"Anaconda", "Valeria","Mr.Catra", "Ines Brasil", "Floor Jansen"};
+	static private int[] rabbitNamesCount = new int[rabbitNames.length];
+		
 	//Construtor
-	
 	public MagicHat(String hatName){
 		this.hatName = hatName;
 		rabbits = new Rabbit[1+select.nextInt(maxRabbits)];
@@ -18,16 +20,14 @@ public class MagicHat {
 	
 	//Representação do objeto chapel
 	public String toString(){
-			String hatString = "\n" + hatName + "contains :\n ";
+			String hatString = "\n" + hatName + " contém :\n  ";
 			for(Rabbit rabbit: rabbits){
 				hatString += "     " + rabbit;
 			}
 			return hatString;
 	}
 	
-	static class Rabbit {
-		static private String[] rabbitNames = {"Anaconda", "Valeria","Mr.Catra", "Ines Brasil", "Floor Jansen"};
-		static private int[] rabbitNamesCount = new int[rabbitNames.length];
+	public class Rabbit {
 		private String name;
 		
 		//construtor
