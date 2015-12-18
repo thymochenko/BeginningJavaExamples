@@ -1,4 +1,4 @@
-public class Animal{
+public class Animal {
 	
 	private String aType;
 	
@@ -7,6 +7,6 @@ public class Animal{
 	}
 	
 	public String toString(){
-		return "Este e : " + this.aType;
+		return "Este é {__construtorPai__} : " + this.aType;
 	}
 }
